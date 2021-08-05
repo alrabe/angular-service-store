@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { delay, filter, tap } from 'rxjs/operators';
-import { __makeTemplateObject } from 'tslib';
 import { UploadedDeal } from '../models/uploaded-deal';
 
 @Injectable({
