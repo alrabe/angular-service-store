@@ -1,0 +1,13 @@
+<div  class="header">
+  <h2>Uploaded Deals</h2>
+  <div class="header-right">
+    <span *ngIf="isLoading | async">L</span>
+    <button (click)="reloadDeals()">Reload</button>
+    <button (click)="clearDeals()">Clear</button>
+  </div>
+</div>
+<div>
+  <li *ngFor="let deal of deals | async">
+  <uploaded-deal [deal]="deal"></uploaded-deal>
+  </li>
+</div>
